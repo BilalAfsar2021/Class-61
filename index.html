@@ -13,6 +13,29 @@
 </head>
 
 <body>
+        <amp-web-push
+        id="amp-web-push"
+        layout="nodisplay"
+        helper-iframe-url="https://bilalafsar2021.github.io/pushalert-amp-helper-frame.html"
+        permission-dialog-url="https://bilalafsar2021.github.io/pushalert-amp-permission-dialog.html"
+        service-worker-url="https://bilalafsar2021.github.io/sw.js">
+    </amp-web-push>
+
+    <div class="pa-web-push">
+        <amp-web-push-widget visibility="unsubscribed" layout="fixed" width="250" height="40">
+            <button class="pa-amp-subscribe" on="tap:amp-web-push.subscribe">
+                <amp-img
+                    width="20"
+                    height="20"
+                    layout="fixed"
+                    src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48dGl0bGU+UHVzaEFsZXJ0PC90aXRsZT48ZyBpZD0iRm9ybWFfMSIgZGF0YS1uYW1lPSJGb3JtYSAxIj48ZyBpZD0iRm9ybWFfMS0yIiBkYXRhLW5hbWU9IkZvcm1hIDEtMiI+PHBhdGggZD0iTTEzMi4wNywyNTBjMTguNjIsMCwzMy43MS0xMS41MywzMy43MS0yMUg5OC4zNkM5OC4zNiwyMzguNDIsMTEzLjQ2LDI1MCwxMzIuMDcsMjUwWk0yMTksMjAwLjUydjBhNTcuNDIsNTcuNDIsMCwwLDEtMTguNTQtNDIuMzFWMTE0LjcyYTY4LjM2LDY4LjM2LDAsMCwwLTQzLjI0LTYzLjU1VjM1LjlhMjUuMTYsMjUuMTYsMCwxLDAtNTAuMzIsMFY1MS4xN2E2OC4zNiw2OC4zNiwwLDAsMC00My4yMyw2My41NXY0My40NmE1Ny40Miw1Ny40MiwwLDAsMS0xOC41NCw0Mi4zMXYwYTEwLjQ5LDEwLjQ5LDAsMCwwLDYuNTcsMTguNjdIMjEyLjQzQTEwLjQ5LDEwLjQ5LDAsMCwwLDIxOSwyMDAuNTJaTTEzMi4wNyw0NS40MmExMS4zMywxMS4zMywwLDEsMSwxMS4zNi0xMS4zM0ExMS4zMywxMS4zMywwLDAsMSwxMzIuMDcsNDUuNDJabTczLjg3LTE3LjY3LTYuNDUsOS43OGE4My40Niw4My40NiwwLDAsMSwzNi4xNSw1NC43N2wxMS41My0yLjA2YTk1LjIzLDk1LjIzLDAsMCwwLTQxLjIzLTYyLjVoMFpNNjQuNDYsMzcuNTJMNTgsMjcuNzVhOTUuMjMsOTUuMjMsMCwwLDAtNDEuMjMsNjIuNWwxMS41MywyLjA2QTgzLjQ2LDgzLjQ2LDAsMCwxLDY0LjQ1LDM3LjU0aDBaIiBmaWxsPSIjZmZmIi8+PC9nPjwvZz48L3N2Zz4="></amp-img>
+                Subscribe to Notifications
+            </button>
+        </amp-web-push-widget>
+        <amp-web-push-widget visibility="subscribed" layout="fixed" width="250" height="40">
+              <button class="pa-amp-unsubscribe" on="tap:amp-web-push.unsubscribe">Unsubscribe from Notifications</button>
+        </amp-web-push-widget>
+    </div>
     <center> 
        
         
