@@ -109,24 +109,16 @@
     <div class="line"></div>
     <img src="Bilal-AfsarContact.png">
     </section>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCO5BHC2O9mhBZtLXl-4AafmHdB22yWbjM",
-    authDomain: "web-push-7a445.firebaseapp.com",
-    projectId: "web-push-7a445",
-    storageBucket: "web-push-7a445.appspot.com",
-    messagingSenderId: "595783721675",
-    appId: "1:595783721675:web:4904b8c61dbe05952b714e"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+  
+ <div id="token"></div>
+    <div id="msg"></div>
+    <div id="notis"></div>
+    <div id="err"></div>
+    <script>
+       MsgElem = document.getElementById("msg")
+       TokenElem = document.getElementById("token")
+       NotisElem = document.getElementById("notis")
+       ErrElem = document.getElementById("err")
+    </script>
 </body>
 </html>
