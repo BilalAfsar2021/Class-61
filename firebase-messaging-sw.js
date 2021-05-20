@@ -36,4 +36,15 @@ messaging.setBackgroundMessageHandler(function(payload) {
         notificationTitle,
         notificationOptions,
     );
+    const messaging = firebase.messaging();
+ messaging
+   .requestPermission()
+   .then(function () {
+     MsgElem.innerHTML = "Notification permission granted." 
+     console.log("Notification permission granted.");
+   })
+   .catch(function (err) {
+   ErrElem.innerHTML = ErrElem.innerHTML + "; " + err
+   console.log("Unable to get permission to notify.", err);
+ });
 });
